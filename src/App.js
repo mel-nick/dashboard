@@ -1,26 +1,38 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, {Fragment} from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import Navigation from './components/Navigation'
+import Users from './components/Users'
+import Sessions from './components/Sessions'
+import Analytics from './components/Analytics'
+import Chats from './components/Chats'
+import Messages from './components/Messages'
+import HelpCenter from './components/HelpCenter'
+import Settings from './components/Settings'
+import {Container, Row } from 'react-bootstrap'
+import 'bootstrap/dist/css/bootstrap.min.css'
 import './App.css';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <Router>
+      <Fragment>
+      <Container fluid >
+        <Row className="row">
+            <Navigation />
+              <Switch>
+                <Route exact path ="/users" component={Users} />
+                <Route exact path ="/sessions" component={Sessions} />
+                <Route exact path ="/analytics" component={Analytics} />
+                <Route exact path ="/messages" component={Messages} />
+                <Route exact path ="/chats" component={Chats} />
+                <Route exact path ="/help" component={HelpCenter} />
+                <Route exact path ="/settings" component={Settings} />
+              </Switch>
+        </Row>
+      </Container>
+      </Fragment>        
+    </Router>
+  )
 }
 
-export default App;
+export default App
