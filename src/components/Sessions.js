@@ -1,4 +1,4 @@
-import React, {Fragment} from 'react'
+import React from 'react'
 import {Col } from 'react-bootstrap'
 
 const Sessions = () => {

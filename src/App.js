@@ -1,5 +1,5 @@
-import React, {Fragment} from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import React, {Fragment, useState} from 'react';
+import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom'
 import Navigation from './components/Navigation'
 import Users from './components/Users'
 import Sessions from './components/Sessions'
@@ -13,12 +13,16 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import './App.css';
 
 const App = () => {
-  return (
+  const [redirect, setRedirect] = useState(true)
+
+     return (
+      
     <Router>
       <Fragment>
       <Container fluid >
         <Row className="row">
             <Navigation />
+            { redirect ? <Redirect to="/users" />: null}
               <Switch>
                 <Route exact path ="/users" component={Users} />
                 <Route exact path ="/sessions" component={Sessions} />
