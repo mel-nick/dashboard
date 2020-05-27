@@ -81,7 +81,6 @@ const Navigation = () => {
                     </svg>
                   Help center
                   </Nav.Link>
-                  <Badge variant="secondary">Soon</Badge>
                 </Nav.Item>
                 <Nav.Item>
                   <Nav.Link  eventKey="7" as={Link} to="/settings" className="d-inline">
