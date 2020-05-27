@@ -20,8 +20,10 @@
 }
 .nav-item {
     display:flex;
-    justify-content: space-between;
     align-items: center;
+}
+.nav-item .badge {
+    margin-left:20px;
 }
 .nav-icon{
     margin-right: 20px;

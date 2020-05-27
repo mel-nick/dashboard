@@ -22,7 +22,7 @@ const Navigation = () => {
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="nav-toggle" />
           <Navbar.Collapse className="sidebar-sticky" id="nav-toggle">
-            <Nav className="flex-column">
+            <Nav className="flex-column  w-100">
                 <Nav.Item>
                   <Nav.Link eventKey="1" as={Link} to="/users" className="d-inline">
                   <svg className="nav-icon" width={14} height={18} viewBox="0 0 14 18" fill="none" xmlns="http://www.w3.org/2000/svg">
