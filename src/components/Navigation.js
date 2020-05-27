@@ -1,11 +1,11 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
-import {Navbar, Nav, Col, Badge,Image } from 'react-bootstrap'
-import userIcon from '../img/userIcon.png'
+import {Navbar, Nav, Col, Badge } from 'react-bootstrap'
+// import userIcon from '../img/userIcon.png'
 const Navigation = () => {
 
     return (
-        <Col md={2} className="d-flex flex-column">     
+        <Col md={3} className="d-flex flex-column">     
         <Navbar collapseOnSelect expand="md" className="d-block sidebar p-0 pt-1">
           <Navbar.Brand>
             <svg className="nav-icon" width={74} height={19} viewBox="0 0 74 19" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -99,12 +99,12 @@ const Navigation = () => {
               
           </Navbar.Collapse>
         </Navbar>
-          <div className="user d-none d-md-flex justify-content-start mt-auto mb-3">
+          {/* <div className="user d-none d-md-flex justify-content-start mt-auto mb-3">
                   <div>
                    <Image src={userIcon} alt="userimg" roundedCircle />
                   </div>
                   <p className="user-name font-weight-bold d-flex">Peterson <br/> Jacksonmom</p>
-          </div>
+          </div> */}
         </Col>
     )
 }

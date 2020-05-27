@@ -3,7 +3,7 @@ import {Col } from 'react-bootstrap'
 
 const Sessions = () => {
     return (
-        <Col md={10} className="wrapper">
+        <Col md={9} className="wrapper">
             <div className="inner h-100 d-flex flex-column justify-content-center align-items-center">
             <svg className="mb-5" width={75} height={75} viewBox="0 0 75 75" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M1.29178 53.9583L14.4584 40.7917L27.6251 53.9583L53.9585 27.625L73.7085 47.375" stroke="#111111" strokeLinecap="round" strokeLinejoin="round" />

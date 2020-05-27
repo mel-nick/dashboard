@@ -19,7 +19,7 @@ const App = () => {
       
     <Router>
       <Fragment>
-      <Container fluid >
+      <Container  >
         <Row className="row">
             <Navigation />
             { redirect ? <Redirect to="/users" />: null}
